@@ -1,10 +1,11 @@
 "use client";
 
+import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 function MainShape() {
-  const meshRef = THREE.useRef<THREE.Mesh>(null);
+  const meshRef = useRef<THREE.Mesh>(null);
 
   useFrame((state, delta) => {
     if (meshRef.current) {
@@ -14,13 +15,12 @@ function MainShape() {
   });
 
   return (
-    <mesh ref={meshRef}>
+    <mesh ref={meshRef} castShadow receiveShadow>
       <icosahedronGeometry args={[1.5, 0]} />
       <meshStandardMaterial
         color="#666666"
         metalness={0.8}
         roughness={0.2}
-        wireframe={false}
       />
     </mesh>
   );
