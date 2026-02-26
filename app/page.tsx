@@ -4,6 +4,19 @@ import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+declare module "three" {
+  interface JSXMesh {
+    castShadow?: boolean;
+    receiveShadow?: boolean;
+  }
+  interface JSXIcosahedronGeometry {
+    args?: [size: number, detail: number];
+  }
+  interface JSXSphereGeometry {
+    args?: [radius: number, widthSegments: number, heightSegments: number];
+  }
+}
+
 function MainShape() {
   const meshRef = useRef<THREE.Mesh>(null);
 
