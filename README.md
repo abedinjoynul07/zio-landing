@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zio 3D Landing Page
 
-## Getting Started
+A clean, minimal 3D landing page built with Next.js and React Three Fiber.
 
-First, run the development server:
+**GitHub Repository:** https://github.com/abedinjoynul07/zio-landing
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Quick Deployment (30 seconds)
+
+### Option 1: Netlify Drop (Easiest)
+
+1. Go to **https://app.netlify.com/drop**
+2. Drag and drop the `landing.html` file
+3. You'll get a unique Netlify URL immediately!
+
+### Option 2: Deploy the Next.js Version
+
+1. Go to **https://app.netlify.com**
+2. Click **"Add new site" → "Import an existing project"**
+3. Select this GitHub repository: `abedinjoynul07/zio-landing`
+4. Build command: `npm run build`
+5. Publish directory: `out`
+6. Click **"Deploy site"**
+
+---
+
+## 📁 Project Structure
+
+```
+zio-landing/
+├── app/
+│   ├── page.tsx       # Next.js 3D landing page
+│   ├── layout.tsx     # Root layout with metadata
+│   └── globals.css    # Global styles
+├── landing.html       # Standalone HTML version (no build needed!)
+├── package.json       # Dependencies
+├── next.config.ts     # Next.js configuration
+├── tsconfig.json      # TypeScript configuration
+├── tailwind.config.ts # Tailwind CSS configuration
+├── DEPLOY.md          # Detailed deployment guide
+├── GITHUB_SETUP.md    # GitHub setup instructions
+└── README.md          # This file
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **3D Rotating Shape**: Icosahedron with metallic material
+- **Floating Particles**: Animated particles in the background
+- **Mouse Interaction**: Parallax effect based on mouse movement
+- **Smooth Animations**: Fluid motion and transitions
+- **Responsive Design**: Works on all screen sizes
+- **Clean Minimal Design**: Focus on aesthetics
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js 16 + React 19
+- **3D Graphics:** React Three Fiber + Three.js
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **Hosting:** Netlify (or any static host)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💻 Local Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Install dependencies
+npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Run development server
+npm run dev
+
+# Open http://localhost:3000
+```
+
+---
+
+## 📚 Learn More
+
+- **Next.js Documentation:** https://nextjs.org/docs
+- **React Three Fiber:** https://docs.pmnd.rs/react-three-fiber
+- **Three.js:** https://threejs.org/docs/
+
+---
+
+## 👥 Collaborators
+
+- **Owner:** abedinjoynul07
+- **Admin Access:** shokal.ash21016@gmail.com (Pending)
+
+**To add yourself as a collaborator:**
+
+1. Go to repository settings: https://github.com/abedinjoynul07/zio-landing/settings/access
+2. Click **"Invite Collaborator"**
+3. Search: `shokal.ash21016@gmail.com`
+4. Select **"Admin"** permission
+5. Click **"Add collaborator"**
+
+---
+
+## 🎯 Future Projects
+
+This repository will be used for all future projects. Check the `DEPLOY.md` file for deployment instructions.
+
+---
+
+## 📝 License
+
+ISC
+
+---
+
+**Created by Zio** 🤖
